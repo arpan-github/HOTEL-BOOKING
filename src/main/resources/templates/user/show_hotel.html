@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Title -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+	integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<title>The Palatin - Hotel &amp; Resort Template</title>
+<!-- Favicon -->
+<link rel="icon" th:href="@{/img/core-img/favicon.ico}">
+
+<!-- Core Stylesheet -->
+<link rel="stylesheet" href="" th:href="@{/css/style.css}">
+
+
+
+<link rel="stylesheet" href="" th:href="@{/css/bootstrap.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/classy-nav.css}">
+<link rel="stylesheet" href="" th:href="@{/css/owl.carousel.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/animate.css}">
+<link rel="stylesheet" href="" th:href="@{/css/magnific-popup.css}">
+<link rel="stylesheet" href="" th:href="@{/css/font-awesome.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/nice-select.css}">
+<link rel="stylesheet" href="" th:href="@{/css/travel-icon.css}">
+<link rel="stylesheet" href="" th:href="@{/css/image.css}">
+<style type="text/css">
+label {
+	display: block;
+	font: 1rem 'Fira Sans', sans-serif;
+}
+
+input, label {
+	margin: 0.4rem 0;
+}
+</style>
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div class="preloader d-flex align-items-center justify-content-center">
+		<div class="cssload-container">
+			<div class="cssload-loading">
+				<i></i><i></i><i></i><i></i>
+			</div>
+		</div>
+	</div>
+
+	<!-- ##### Header Area Start ##### -->
+	<header class="header-area">
+		<!-- Navbar Area -->
+		<div class="palatin-main-menu">
+			<div class="classy-nav-container breakpoint-off">
+				<div class="container">
+					<!-- Menu -->
+					<nav class="classy-navbar justify-content-between" id="palatinNav">
+
+						<!-- Nav brand -->
+						<a th:href="@{/public/}" class="nav-brand"><img
+							th:src="@{/img/core-img/logo.png}" alt=""></a>
+
+						<!-- Navbar Toggler -->
+						<div class="classy-navbar-toggler">
+							<span class="navbarToggler"><span></span><span></span><span></span></span>
+						</div>
+
+						<!-- Menu -->
+						<div class="classy-menu">
+
+							<!-- close btn -->
+							<div class="classycloseIcon">
+								<div class="cross-wrap">
+									<span class="top"></span><span class="bottom"></span>
+								</div>
+							</div>
+
+							<!-- Nav Start -->
+							<div class="classynav">
+								<ul>
+									<li class="active"><a th:href="@{/public/}">Home</a></li>
+									<li><a th:href="@{/public/about-us}">About Us</a></li>
+									<li><a href="#">Pages</a>
+										<ul class="dropdown">
+											<li><a th:href="@{/public/}">Home</a></li>
+											<li><a th:href="@{/public/about-us}">About Us</a></li>
+											<li><a th:href="@{/public/services}">Services</a></li>
+											<li><a th:href="@{/public/rooms}">Rooms</a></li>
+											<li><a th:href="@{/public/blog}">News</a></li>
+											<li><a th:href="@{/public/contact}">Contact</a></li>
+											<li><a th:href="@{/public/elements}">Elements</a></li>
+										</ul></li>
+									<li><a href="#">Mega Menu</a>
+										<div class="megamenu">
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Admin Login</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li style="background-color: red;"><a th:href="@{/log/loging}">Admin Login</a></li>
+												<li><a th:href="@{/Catagory/addCatagory}">Add
+														Catagory</a></li>
+
+												<li><a th:href="@{/Catagory/viewAllCatagory/0}">view
+														All Catagory</a></li>
+												<li><a th:href="@{/post/show-all-hotel/0}">Show all
+														hotel post</a></li>
+												<li><a th:href="@{/logout}">Log Out</a></li>
+
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Home</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Home</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+										</div></li>
+									<li><a th:href="@{/public/services}">Services</a></li>
+									<li><a th:href="@{/public/contact}">Contact</a></li>
+								</ul>
+
+								
+
+							</div>
+							<!-- Nav End -->
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ##### Header Area End ##### -->
+
+	<!-- ##### Breadcumb Area Start ##### -->
+
+
+	<nav class="navbar navbar-dark bg-dark" style="margin-top: 10%;">
+
+		<nav class="navbar navbar-expand-lg ">
+			<a href="#" type="button" class="btn btn-danger"
+				style="margin-left: 80%;"><i
+				class="fa-sharp fa-solid fa-plane-departure"></i>Flights</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup"
+				style="margin-left: 40%;">
+				<div class="navbar-nav">
+					<a type="button" class="btn btn-danger" href="#"><i
+						class="fa-solid fa-train"></i>Trains<span class="sr-only">(current)</span></a>
+					<a type="button" class="btn btn-danger" style="margin-left: 40%;"
+						th:href="@{/booking/show-hotel}"><i class="fa-solid fa-hotel"></i>Hotels</a>
+					<a type="button" class="btn btn-danger" href="#"
+						style="margin-left: 40%;"><i class="fa-solid fa-bus"></i>Bus</a> <a
+						type="button" class="btn btn-danger" href="#"
+						style="margin-left: 40%;"><i class="fa-solid fa-globe"></i>Package</a>
+				</div>
+			</div>
+
+		</nav>
+
+	</nav>
+
+	<!-- Header -->
+
+	<div style="margin-top: 30%;">
+		<img class="w3-image" th:src="@{/img/bg-img/bg-8.jpg}" alt="The Hotel"
+			style="margin-top: -50%;">
+		<div class="w3-display-left w3-padding w3-col l6 m8"
+			style="margin-top: 5%;">
+			<div class="w3-container w3-red">
+				<h2>
+					<i class="fa fa-bed w3-margin-right"></i>Hotel Name
+				</h2>
+			</div>
+			<div class="w3-container w3-white w3-padding-16">
+
+
+
+
+				<form th:action="@{/find/search}" target="_blank" method="get">
+					<div class="w3-row-padding" style="margin: 0 -16px;">
+						<div class="w3-half w3-margin-bottom">
+							<label><i class="fa fa-calendar-o"></i> Check In</label> <input
+								class="w3-input w3-border" placeholder="DD MM YYYY"
+								name="checkInDate" type="date" id="start" required>
+						</div>
+						<div class="w3-half">
+							<label><i class="fa fa-calendar-o"></i> Check Out</label> <input
+								class="w3-input w3-border" placeholder="DD MM YYYY"
+								name="checkOutDate" type="date" id="start" required>
+						</div>
+					</div>
+
+					<div class="w3-row-padding" style="margin: 0 -16px;">
+						<div class="w3-half w3-margin-bottom">
+							<label><i class="fa fa-male"></i> Adults</label><input
+								class="w3-input w3-border" placeholder="1" name="adults"
+								type="number" value="1" required>
+						</div>
+						<div class="w3-half">
+							<label><i class="fa fa-child"></i> Kids</label><input
+								class="w3-input w3-border" placeholder="1" name="kids"
+								type="number" value="0" required>
+						</div>
+						<div class="w3-half">
+							<label><i class="fa fa-child"></i>Total Room</label><input
+								class="w3-input w3-border" placeholder="1" name="totalRoom"
+								type="number" value="0" required>
+						</div>
+					</div>
+
+					<div class="w3-row-padding" style="margin: 8px -16px;">
+
+						<div class=" w3-margin-bottom">
+							<div class="search-contener">
+								<input class="w3-input w3-border" type="text" name="keyword"
+									placeholder="Search" id="search-input">
+								<div class="search-result">
+									<h1>this is result</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w3-button w3-dark-grey">
+						<input class="w3-button w3-dark-grey" type="submit"
+							value="Search availability"><i
+							class="fa-solid fa-magnifying-glass"></i>
+					</div>
+				</form>
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="grid">
+		<div class="item"
+			style="background-image: url(https://images.unsplash.com/photo-1439209306665-700c9bca794c?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
+			<a th:href="@{/booking/show-all-hotel-book/0}"><h2
+					style="color: white; margin-top: 130%; margin-left: 10%;">Kolkata</h2></a>
+			<p style="color: white; margin-left: 10%;">Kolakta All hotel &
+				resort</p>
+		</div>
+
+		<div class="item"
+			style="background-image: url(https://images.unsplash.com/photo-1466853817435-05b43fe45b39?dpr=1&auto=compress,format&fit=crop&w=1199&h=871&q=80&cs=tinysrgb&crop=)">
+			<h2 style="color: white; margin-top: 45%; margin-left: 2%;">Kolkata</h2>
+			<p style="color: white; margin-left: 2%;">Kolakta All hotel &
+				resort</p>
+		</div>
+
+		<div class="item"
+			style="background-image: url(https://images.unsplash.com/photo-1488572384981-eac03dfeb6b9?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=)">
+			<h2 style="color: white; margin-top: 45%; margin-left: 2%;">Kolkata</h2>
+			<p style="color: white; margin-left: 2%;">Kolakta All hotel &
+				resort</p>
+		</div>
+
+		<div class="item"
+			style="background-image: url(https://images.unsplash.com/photo-1470091688026-38b51162c8df?dpr=1&auto=compress,format&fit=crop&w=1199&h=750&q=80&cs=tinysrgb&crop=)">
+			<h2 style="color: white; margin-top: 33%; margin-left: 2%;">Kolkata</h2>
+			<p style="color: white; margin-left: 2%;">Kolakta All hotel &
+				resort</p>
+		</div>
+
+		<div class="item"
+			style="background-image: url(https://images.unsplash.com/photo-1475139450941-3b6464b2dde3?dpr=1&auto=compress,format&fit=crop&w=1199&h=673&q=80&cs=tinysrgb&crop=)">
+			<h2 style="color: white; margin-top: 15%; margin-left: 2%;">Kolkata</h2>
+			<p style="color: white; margin-left: 2%;">Kolakta All hotel &
+				resort</p>
+		</div>
+	</div>
+
+
+	<!-- css image animation  -->
+
+	<div class="container">
+		<div class="box">
+			<div class="imgBx">
+				<img
+					src="https://images.unsplash.com/photo-1579748138140-ce9ef2c32db1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Image Title</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Commodi accusamus molestias quidem iusto.</p>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBx">
+				<img
+					src="https://images.unsplash.com/photo-1579639782539-15cc6c0be63f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Image Title</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Commodi accusamus molestias quidem iusto.</p>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBx">
+				<img
+					src="https://images.unsplash.com/photo-1603984362497-0a878f607b92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Image Title</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Commodi accusamus molestias quidem iusto.</p>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBx">
+				<img
+					src="https://images.unsplash.com/photo-1579310962131-aa21f240d986?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Image Title</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Commodi accusamus molestias quidem iusto.</p>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBx">
+				<img
+					src="https://images.unsplash.com/photo-1579310962131-aa21f240d986?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Image Title</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Commodi accusamus molestias quidem iusto.</p>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBx">
+				<img th:src="@{/img/state/1896134jpg.jpg}">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Image Title</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Commodi accusamus molestias quidem iusto.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ##### Footer Area Start ##### -->
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row">
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-lg-5">
+					<div class="footer-widget-area mt-50">
+						<a href="#" class="d-block mb-5"><img
+							th:src="@{/img/core-img/logo.png}" alt=""></a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Donec malesuada lorem maximus mauris sceleri sque, at rutrum
+							nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus
+							finibus.</p>
+					</div>
+				</div>
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="footer-widget-area mt-50">
+						<h6 class="widget-title mb-5">Find us on the map</h6>
+						<img th:src="@{/img/bg-img/footer-map.png}" alt="">
+					</div>
+				</div>
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="footer-widget-area mt-50">
+						<h6 class="widget-title mb-5">Subscribe to our newsletter</h6>
+						<form action="#" method="post" class="subscribe-form">
+							<input type="email" name="subscribe-email" id="subscribeemail"
+								placeholder="Your E-mail">
+							<button type="submit">Subscribe</button>
+						</form>
+					</div>
+				</div>
+
+				<!-- Copywrite Text -->
+				<div class="col-12">
+					<div class="copywrite-text mt-30">
+						<p>
+							<a href="#"> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+							</a>
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
+							All rights reserved | This template is made with <i
+								class="fa fa-heart-o" aria-hidden="true"></i> by <a
+								href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ##### Footer Area End ##### -->
+
+	<!-- ##### All Javascript Script ##### -->
+	<!-- jQuery-2.2.4 js -->
+	<script th:src="@{/js/jquery/jquery-2.2.4.min.js}"></script>
+	<!-- Popper js -->
+	<script th:src="@{/js/bootstrap/popper.min.js}"></script>
+	<!-- Bootstrap js -->
+	<script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+	<!-- All Plugins js -->
+	<script th:src="@{/js/plugins/plugins.js}"></script>
+	<!-- Active js -->
+	<script th:src="@{/js/active.js}"></script>
+	<script th:src="@{/js/script.js}"></script>
+
+
+</body>
+
+</html>
+

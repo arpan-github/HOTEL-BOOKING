@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<!-- Title -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+	integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<title>The Palatin - Hotel &amp; Resort Template</title>
+<!-- Favicon -->
+<link rel="icon" th:href="@{/img/core-img/favicon.ico}">
+
+<!-- Core Stylesheet -->
+<link rel="stylesheet" href="" th:href="@{/css/style.css}">
+
+
+<link rel="stylesheet" href="" th:href="@{/css/bootstrap.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/classy-nav.css}">
+<link rel="stylesheet" href="" th:href="@{/css/owl.carousel.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/animate.css}">
+<link rel="stylesheet" href="" th:href="@{/css/magnific-popup.css}">
+<link rel="stylesheet" href="" th:href="@{/css/font-awesome.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/nice-select.css}">
+<link rel="stylesheet" href="" th:href="@{/css/travel-icon.css}">
+
+<style type="text/css">
+.avatar {
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 1px solid white;
+}
+</style>
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div class="preloader d-flex align-items-center justify-content-center">
+		<div class="cssload-container">
+			<div class="cssload-loading">
+				<i></i><i></i><i></i><i></i>
+			</div>
+		</div>
+	</div>
+
+	<!-- ##### Header Area Start ##### -->
+	<header class="header-area">
+		<!-- Navbar Area -->
+		<div class="palatin-main-menu">
+			<div class="classy-nav-container breakpoint-off">
+				<div class="container">
+					<!-- Menu -->
+					<nav class="classy-navbar justify-content-between" id="palatinNav">
+
+						<!-- Nav brand -->
+						<a th:href="@{/public/}" class="nav-brand"><img
+							th:src="@{/img/core-img/logo.png}" alt=""></a>
+
+						<!-- Navbar Toggler -->
+						<div class="classy-navbar-toggler">
+							<span class="navbarToggler"><span></span><span></span><span></span></span>
+						</div>
+
+						<!-- Menu -->
+						<div class="classy-menu">
+
+							<!-- close btn -->
+							<div class="classycloseIcon">
+								<div class="cross-wrap">
+									<span class="top"></span><span class="bottom"></span>
+								</div>
+							</div>
+
+							<!-- Nav Start -->
+							<div class="classynav">
+								<ul>
+									<li class="active"><a th:href="@{/public/}">Home</a></li>
+									<li><a th:href="@{/public/about-us}">About Us</a></li>
+									<li><a href="#">Pages</a>
+										<ul class="dropdown">
+											<li><a th:href="@{/public/}">Home</a></li>
+											<li><a th:href="@{/public/about-us}">About Us</a></li>
+											<li><a th:href="@{/public/services}">Services</a></li>
+											<li><a th:href="@{/public/rooms}">Rooms</a></li>
+											<li><a th:href="@{/public/blog}">News</a></li>
+											<li><a th:href="@{/public/contact}">Contact</a></li>
+											<li><a th:href="@{/public/elements}">Elements</a></li>
+										</ul></li>
+									<li><a href="#">Pages</a>
+										<ul class="dropdown">
+											<li><a th:href="@{/public/}">Home</a></li>
+											<li><a th:href="@{/public/about-us}">About Us</a></li>
+											<li><a th:href="@{/public/services}">Services</a></li>
+											<li><a th:href="@{/public/rooms}">Rooms</a></li>
+											<li><a th:href="@{/public/blog}">News</a></li>
+											<li><a th:href="@{/public/contact}">Contact</a></li>
+											<li><a th:href="@{/public/elements}">Elements</a></li>
+										</ul></li>
+									<li><a href="#">Mega Menu</a>
+										<div class="megamenu">
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Admin Login</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li style="background-color: red;"><a th:href="@{/log/loging}">Admin Login</a></li>
+												<li><a th:href="@{/Catagory/addCatagory}">Add
+														Catagory</a></li>
+
+												<li><a th:href="@{/Catagory/viewAllCatagory/0}">view
+														All Catagory</a></li>
+												<li><a th:href="@{/post/show-all-hotel/0}">Show all
+														hotel post</a></li>
+												<li><a th:href="@{/logout}">Log Out</a></li>
+
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Home</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Home</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+										</div></li>
+									<li><a th:href="@{/public/services}">Services</a></li>
+									<li><a th:href="@{/public/contact}">Contact</a></li>
+								</ul>
+
+								<!-- Button -->
+								<!-- <div class="menu-btn"
+									style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;">
+									<a
+										th:href="@{'/log/profile/view-user-profile/'+${user.usreId}}"><img
+										alt="Avatar" class="avatar"
+										src="https://img.icons8.com/bubbles/100/000000/user.png">
+										<samp th:text="${user.name}"></samp></a>
+								</div> -->
+
+							</div>
+							<!-- Nav End -->
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ##### Header Area End ##### -->
+
+
+
+	<!-- ##### Rooms Area Start ##### -->
+	<section class="rooms-area section-padding-0-100"
+		style="margin-top: 10%;">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-6">
+					<div class="section-heading text-center">
+						<div class="line-"></div>
+						<h2>Choose a room</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Donec malesuada lorem maximus mauris sceleri sque, at rutrum
+							nulla dictum. Ut ac ligula sapien.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- <form action="/find/filter">
+				<div class="custom-control custom-checkbox">
+					<input type="submit" class="custom-control-input"
+						id="customCheck1" name="priceFilter"> <label class="custom-control-label"
+						for="customCheck1">₹0-₹1000</label>
+				</div>
+			</form> -->
+
+
+
+
+			<div class="row">
+
+				<!-- Single Rooms Area -->
+
+				<div class="col-12 col-md-6 col-lg-4" th:each="c:${hotelList}"
+					style="margin-top: 5%;">
+					<div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
+						<!-- Thumbnail -->
+						<div class="bg-thumbnail bg-img">
+							<a th:href="@{'/find/view-single-post/'+${c.postId}+'/0'}"> <img
+								alt="" th:src="@{/img/bg-img/1.jpg}">
+							</a>
+						</div>
+						<!-- Price -->
+						<p class="price-from" th:text="${c.romePrice}">From $150/night</p>
+						<!-- Rooms Text -->
+						<div class="rooms-text">
+							<div class="line"></div>
+							<h4 th:text="${c.postname}">Deluxe Room</h4>
+							<p th:text="${c.postDescription}">Lorem ipsum dolor sit amet,
+								consectetur adipiscing elit. Donec malesuada lorem maximus
+								mauris sceleri sque.</p>
+
+						</div>
+
+					</div>
+					<div style="margin-top: -20%; background-color: #DCDCDC;">
+						<h6>
+							<span><i class="fa-sharp fa-solid fa-envelope"></i></span>
+							Business Email :-<span th:text="${c.businessEmail}"
+								style="color: #e9967a;"></span>
+						</h6>
+						<h6>
+							<span><i class="fa-solid fa-location-dot"></i></span> Hotel
+							Location :-<span th:text="${c.hotelLocation}"
+								style="color: #e9967a;"></span>
+						</h6>
+						<h6>
+							<span><i class="fa-solid fa-phone"></i></span> One Phone Number
+							:-<span th:text="${c.onePhoneNumber}" style="color: #e9967a;"></span>
+						</h6>
+						<h6>
+							<span><i class="fa-solid fa-phone"></i></span> Two Phone Number
+							:-<span th:text="${c.twoPhoneNumber}" style="color: #e9967a;"></span>
+						</h6>
+						<h6>
+							<span><i class="fa-solid fa-wifi"></i></span> Wi-Fi :-<span
+								th:text="${c.wiFi}" style="color: #e9967a;"></span>
+						</h6>
+						<h6>
+							<span><i class="fa-solid fa-house-user"></i></span> Sq.ft :-<span
+								th:text="${c.sqft}" style="color: #e9967a;"></span>
+						</h6>
+						<h6>
+							<span><i class="fa-solid fa-bed"></i></span> Bed Size :-<span
+								th:text="${c.doublebed}" style="color: #e9967a;"></span>
+						</h6>
+						<h6>
+							<span><i class="fa-solid fa-utensils"></i></span> Restaurant :-<span
+								th:text="${c.restaurant}" style="color: #e9967a;"></span>
+						</h6>
+						<h6>
+							<span><i class="fa-solid fa-football"></i></span> park :-<span
+								th:text="${c.park}" style="color: #e9967a;"></span>
+						</h6>
+						<h6>
+							<span><i class="fa-solid fa-person-swimming"></i></i></span> Pool :-<span
+								th:text="${c.Pool}" style="color: #e9967a;"></span>
+						</h6>
+						<h6>
+							<span><i class="fa-solid fa-calendar-days"></i></span> Date :-<span
+								th:text="${c.date}" style="color: #e9967a;"></span>
+						</h6>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- ##### Rooms Area End ##### -->
+
+	<!-- ##### Footer Area Start ##### -->
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row">
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-lg-5">
+					<div class="footer-widget-area mt-50">
+						<a href="#" class="d-block mb-5"><img
+							th:src="@{/img/core-img/logo.png}" alt=""></a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Donec malesuada lorem maximus mauris sceleri sque, at rutrum
+							nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus
+							finibus.</p>
+					</div>
+				</div>
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="footer-widget-area mt-50">
+						<h6 class="widget-title mb-5">Find us on the map</h6>
+						<img th:src="@{/img/bg-img/footer-map.png}" alt="">
+					</div>
+				</div>
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="footer-widget-area mt-50">
+						<h6 class="widget-title mb-5">Subscribe to our newsletter</h6>
+						<form action="#" method="post" class="subscribe-form">
+							<input type="email" name="subscribe-email" id="subscribeemail"
+								placeholder="Your E-mail">
+							<button type="submit">Subscribe</button>
+						</form>
+					</div>
+				</div>
+
+				<!-- Copywrite Text -->
+				<div class="col-12">
+					<div class="copywrite-text mt-30">
+						<p>
+							<a href="#"> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+							</a>
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
+							All rights reserved | This template is made with <i
+								class="fa fa-heart-o" aria-hidden="true"></i> by <a
+								href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ##### Footer Area End ##### -->
+
+	<!-- ##### All Javascript Script ##### -->
+	<!-- jQuery-2.2.4 js -->
+	<script th:src="@{/js/jquery/jquery-2.2.4.min.js}"></script>
+	<!-- Popper js -->
+	<script th:src="@{/js/bootstrap/popper.min.js}"></script>
+	<!-- Bootstrap js -->
+	<script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+	<!-- All Plugins js -->
+	<script th:src="@{/js/plugins/plugins.js}"></script>
+	<!-- Active js -->
+	<script th:src="@{/js/active.js}"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>

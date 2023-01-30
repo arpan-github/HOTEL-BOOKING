@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<!-- Title -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+	integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<title>The Palatin - Hotel &amp; Resort Template</title>
+<!-- Favicon -->
+<link rel="icon" th:href="@{/img/core-img/favicon.ico}">
+
+<!-- Core Stylesheet -->
+<link rel="stylesheet" href="" th:href="@{/css/style.css}">
+
+
+<link rel="stylesheet" href="" th:href="@{/css/bootstrap.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/classy-nav.css}">
+<link rel="stylesheet" href="" th:href="@{/css/owl.carousel.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/animate.css}">
+<link rel="stylesheet" href="" th:href="@{/css/magnific-popup.css}">
+<link rel="stylesheet" href="" th:href="@{/css/font-awesome.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/nice-select.css}">
+<link rel="stylesheet" href="" th:href="@{/css/travel-icon.css}">
+
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div class="preloader d-flex align-items-center justify-content-center">
+		<div class="cssload-container">
+			<div class="cssload-loading">
+				<i></i><i></i><i></i><i></i>
+			</div>
+		</div>
+	</div>
+
+	<!-- ##### Header Area Start ##### -->
+	<header class="header-area">
+		<!-- Navbar Area -->
+		<div class="palatin-main-menu">
+			<div class="classy-nav-container breakpoint-off">
+				<div class="container">
+					<!-- Menu -->
+					<nav class="classy-navbar justify-content-between" id="palatinNav">
+
+						<!-- Nav brand -->
+						<a th:href="@{/public/}" class="nav-brand"><img
+							th:src="@{/img/core-img/logo.png}" alt=""></a>
+
+						<!-- Navbar Toggler -->
+						<div class="classy-navbar-toggler">
+							<span class="navbarToggler"><span></span><span></span><span></span></span>
+						</div>
+
+						<!-- Menu -->
+						<div class="classy-menu">
+
+							<!-- close btn -->
+							<div class="classycloseIcon">
+								<div class="cross-wrap">
+									<span class="top"></span><span class="bottom"></span>
+								</div>
+							</div>
+
+							<!-- Nav Start -->
+							<div class="classynav">
+								<ul>
+									<li class="active"><a th:href="@{/public/}">Home</a></li>
+									<li><a th:href="@{/public/about-us}">About Us</a></li>
+									<li><a href="#">Pages</a>
+										<ul class="dropdown">
+											<li><a th:href="@{/public/}">Home</a></li>
+											<li><a th:href="@{/public/about-us}">About Us</a></li>
+											<li><a th:href="@{/public/services}">Services</a></li>
+											<li><a th:href="@{/public/rooms}">Rooms</a></li>
+											<li><a th:href="@{/public/blog}">News</a></li>
+											<li><a th:href="@{/public/contact}">Contact</a></li>
+											<li><a th:href="@{/public/elements}">Elements</a></li>
+										</ul></li>
+									<li><a href="#">Mega Menu</a>
+										<div class="megamenu">
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Admin Login</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li style="background-color: red;"><a
+													th:href="@{/log/loging}">Admin Login</a></li>
+												<li><a th:href="@{/Catagory/addCatagory}">Add
+														Catagory</a></li>
+
+												<li><a th:href="@{/Catagory/viewAllCatagory/0}">view
+														All Catagory</a></li>
+												<li><a th:href="@{/post/show-all-hotel/0}">Show all
+														hotel post</a></li>
+												<li><a th:href="@{/logout}">Log Out</a></li>
+
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Home</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Home</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+										</div></li>
+									<li><a th:href="@{/public/services}">Services</a></li>
+									<li><a th:href="@{/public/contact}">Contact</a></li>
+								</ul>
+
+
+
+							</div>
+							<!-- Nav End -->
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<!-- ##### Rooms Area Start ##### -->
+
+
+	<section class="services-area" style="margin-top: 13%;">
+		<div class="container">
+			<div class="row">
+
+				<!-- Single Service Area -->
+				<div class="col-12 col-sm-6 col-lg-4"
+					style="border: 2px black solid; margin-bottom: 5%; background-color: #D7A4A4;">
+					<div class="single-service-area mb-100 wow fadeInUp"
+						data-wow-delay="100ms" style="margin-top: 5%;">
+						<i class="icon-trekking"></i>
+						<h4>Bike Rentals</h4>
+						<p>Nulla massa dui, posuere non erat in, eleifend mattis dui.
+							Vivamus luctus luctus rhoncus. Donec sagittis nulla id finibus
+							iaculis. Mauris odio tortor.</p>
+					</div>
+
+					<div class="card border-success mb-3" style="max-width: 18rem;">
+						<div class="card-header bg-transparent border-success">Header</div>
+						<div class="card-body text-success">
+							<h5 class="card-title">Success card title</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+						</div>
+						<div class="card-footer bg-transparent border-success">Footer</div>
+					</div>
+
+					<div class="card border-success mb-3" style="max-width: 18rem;">
+						<div class="card-header bg-transparent border-success">
+							<b th:text="${post.postname}"></b>
+						</div>
+						<div class="card-body text-success">
+							<h5 class="card-title">
+								<b>Hotel Price :</b><span th:text="${post.romePrice}"></span><br>(per Night)
+							</h5>
+							<p class="card-text">
+								<b>About :</b><span th:text="${post.postDescription}"></span>
+							</p>
+						</div>
+
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+				<!-- Single Service Area -->
+				<div class="col-12 col-sm-12 col-lg-8"
+					style="border: 2px black solid; margin-bottom: 5%; background-color: #F0EDED;">
+					<div class="single-service-area mb-100 wow fadeInUp"
+						data-wow-delay="300ms" style="margin-top: 5%;">
+
+
+						<div class="card-group">
+							<div class="card">
+								<img class="card-img-top" th:src="@{/img/bg-img/18.jpg}"
+									alt="Card image cap" style="width: 30%;">
+								<div class="card-body">
+									<h5 class="card-title">
+										<b>Hotel Name :</b><span th:text="${post.postname}"></span>
+									</h5>
+									<p class="card-text">
+										<b>Hotel Location :</b><span th:text="${post.hotelLocation}"></span>
+									</p>
+									<p class="card-text">
+										<small class="text-muted"><b>WI-FI :</b><span
+											th:text="${post.wiFi}"></span></small> <small class="text-muted"
+											style="margin-left: 5%;"><b>Pool :</b><span
+											th:text="${post.Pool}"></span></small> <small class="text-muted"
+											style="margin-left: 5%;"><b>Restaurants :</b><span
+											th:text="${post.restaurant}"></span></small> <small
+											class="text-muted" style="margin-left: 5%;"><b>Park(garden)
+												:</b><span th:text="${post.park}"></span></small>
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+						<form th:action="@{/booking/booking-hotel/3}" method="post"
+							class="needs-validation" novalidate>
+							<div class="form-row">
+								<div class="col-md-4 mb-3">
+									<label for="validationCustom01">First name</label> <input
+										type="text" class="form-control" id="validationCustom01"
+										placeholder="First name" name="firstname" required>
+									<div class="valid-feedback">Looks good!</div>
+								</div>
+								<div class="col-md-4 mb-3">
+									<label for="validationCustom02">Last name</label> <input
+										type="text" class="form-control" id="validationCustom02"
+										placeholder="Last name" name="lastname" required>
+									<div class="valid-feedback">Looks good!</div>
+								</div>
+								<div class="col-md-4 mb-3">
+									<label for="validationCustomUsername">Email</label>
+									<div class="input-group">
+										<input type="email" class="form-control"
+											id="validationCustomUsername" placeholder="Email"
+											aria-describedby="inputGroupPrepend" name="email" required>
+										<div class="invalid-feedback">Please choose a username.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom03">Phone Number</label> <input
+										type="text" class="form-control" id="validationCustom03"
+										placeholder="Phone Number" name="phNumber" required>
+									<div class="invalid-feedback">Please provide a valid
+										city.</div>
+								</div>
+								<div class="col-md-3 mb-3">
+									<label for="validationCustom04"> Check In</label> <input
+										type="date" class="form-control" id="validationCustom04"
+										placeholder="State" name="checkInDate" required>
+									<div class="invalid-feedback">Please provide a valid
+										state.</div>
+								</div>
+								<div class="col-md-3 mb-3">
+									<label for="validationCustom05">Check out</label> <input
+										type="date" class="form-control" id="validationCustom05"
+										name="checkOutDate" required>
+									<div class="invalid-feedback">Please provide a valid zip.
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="col-md-4 mb-3">
+									<label for="validationCustom01">Adults</label> <input
+										type="number" class="form-control" id="validationCustom01"
+										placeholder="Adults" name="adults" required>
+									<div class="valid-feedback">Looks good!</div>
+								</div>
+								<div class="col-md-4 mb-3">
+									<label for="validationCustom02">Kids</label> <input
+										type="number" class="form-control" id="validationCustom02"
+										placeholder="Kids" name="kids" required>
+									<div class="valid-feedback">Looks good!</div>
+								</div>
+								<div class="col-md-4 mb-3">
+									<label for="validationCustomUsername">Total Room</label>
+									<div class="input-group">
+										<input type="number" class="form-control"
+											id="validationCustomUsername" placeholder="Total Room"
+											aria-describedby="inputGroupPrepend" name="totalRoom"
+											required>
+										<div class="invalid-feedback">Please choose a username.
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- ----------------------------------- 
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="ac"
+									id="inlineRadio1" value="AC"> <label
+									class="form-check-label" for="inlineRadio1">AC</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="ac"
+									id="inlineRadio2" value="Non AC"> <label
+									class="form-check-label" for="inlineRadio2">Non AC</label>
+							</div> -->
+							<!-- ------------------------------------------------------ -->
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox"
+									id="inlineCheckbox1" value="AC"  name="ac"> <label
+									class="form-check-label" for="inlineCheckbox1">AC</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox"
+									id="inlineCheckbox1" value="Non AC"  name="ac"> <label
+									class="form-check-label" for="inlineCheckbox1">Non AC</label>
+							</div>
+							
+							
+							
+							
+							
+							<div class="form-group" style="margin-top: 2%;">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value=""
+										id="invalidCheck" required> <label
+										class="form-check-label" for="invalidCheck"> Agree to
+										terms and conditions </label>
+									<div class="invalid-feedback">You must agree before
+										submitting.</div>
+								</div>
+							</div>
+
+							<button class="btn btn-primary" type="submit">Book</button>
+
+						</form>
+
+					</div>
+				</div>
+
+
+				<h4>
+					<b>Article 1（Scope of Application)</b>
+				</h4>
+
+				<p>
+					<b>1. </b> These Terms and Conditions shall govern any
+					accommodation agreements or any other related contracts entered
+					into between the hotel and the guest（including daytime guests using
+					rooms for teleworking, etc.; the same shall apply hereinafter）, and
+					any matters not stipulated in the Terms and Conditions shall be
+					governed by law and generally established customs.
+				</p>
+
+				<p>
+					<b>2. </b>Any usage guidelines and precautions（hereinafter
+					collectively referred to as “Rules”）presented by the hotel in
+					connection with these Terms and Conditions shall, in addition to
+					the Hotel Rules and Regulations established by the hotel and kept
+					in guestrooms, constitute a part of these Terms and Conditions.
+				</p>
+
+				<p>
+					<b>3. </b>Notwithstanding the preceding paragraph, any special
+					agreements provided by the hotel within the scope permitted by law
+					and customs shall take precedence.
+				</p>
+
+
+
+
+
+				<h4>
+					<b>Article 2（Special Agreements Not Requiring a Deposit）</b>
+				</h4>
+
+				<p>
+					<b>1. </b>Notwithstanding the provisions of Paragraph 2 of the
+					preceding article, the hotel may accept special agreements that do
+					not require payment of a deposit.
+				</p>
+
+				<p>
+					<b>2. </b>The preceding paragraph on special agreements shall apply
+					when the hotel does not request payment of the deposit set forth in
+					Paragraph 2 of the preceding article or does not specify a deposit
+					payment deadline when accepting applications for an accommodation
+					agreement.
+				</p>
+
+
+
+				<h4>
+					<b>Article 3（Scope of Application)</b>
+				</h4>
+
+				<p>
+					<b>1. </b> These Terms and Conditions shall govern any
+					accommodation agreements or any other related contracts entered
+					into between the hotel and the guest（including daytime guests using
+					rooms for teleworking, etc.; the same shall apply hereinafter）, and
+					any matters not stipulated in the Terms and Conditions shall be
+					governed by law and generally established customs.
+				</p>
+
+				<p>
+					<b>2. </b>Any usage guidelines and precautions（hereinafter
+					collectively referred to as “Rules”）presented by the hotel in
+					connection with these Terms and Conditions shall, in addition to
+					the Hotel Rules and Regulations established by the hotel and kept
+					in guestrooms, constitute a part of these Terms and Conditions.
+				</p>
+
+				<p>
+					<b>3. </b>Notwithstanding the preceding paragraph, any special
+					agreements provided by the hotel within the scope permitted by law
+					and customs shall take precedence.
+				</p>
+
+			</div>
+		</div>
+	</section>
+	<!-- ##### Services Area End ##### -->
+
+
+
+	<!-- ##### Footer Area Start ##### -->
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row">
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-lg-5">
+					<div class="footer-widget-area mt-50">
+						<a href="#" class="d-block mb-5"><img
+							th:src="@{/img/core-img/logo.png}" alt=""></a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Donec malesuada lorem maximus mauris sceleri sque, at rutrum
+							nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus
+							finibus.</p>
+					</div>
+				</div>
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="footer-widget-area mt-50">
+						<h6 class="widget-title mb-5">Find us on the map</h6>
+						<img th:src="@{/img/bg-img/footer-map.png}" alt="">
+					</div>
+				</div>
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="footer-widget-area mt-50">
+						<h6 class="widget-title mb-5">Subscribe to our newsletter</h6>
+						<form action="#" method="post" class="subscribe-form">
+							<input type="email" name="subscribe-email" id="subscribeemail"
+								placeholder="Your E-mail">
+							<button type="submit">Subscribe</button>
+						</form>
+					</div>
+				</div>
+
+				<!-- Copywrite Text -->
+				<div class="col-12">
+					<div class="copywrite-text mt-30">
+						<p>
+							<a href="#"> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+							</a>
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
+							All rights reserved | This template is made with <i
+								class="fa fa-heart-o" aria-hidden="true"></i> by <a
+								href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ##### Footer Area End ##### -->
+
+	<!-- ##### All Javascript Script ##### -->
+	<!-- jQuery-2.2.4 js -->
+	<script th:src="@{/js/jquery/jquery-2.2.4.min.js}"></script>
+	<!-- Popper js -->
+	<script th:src="@{/js/bootstrap/popper.min.js}"></script>
+	<!-- Bootstrap js -->
+	<script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+	<!-- All Plugins js -->
+	<script th:src="@{/js/plugins/plugins.js}"></script>
+	<!-- Active js -->
+	<script th:src="@{/js/active.js}"></script>
+	<script th:src="@{/js/script.js}"></script>
+
+	<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function() {
+			'use strict';
+			window.addEventListener('load',
+					function() {
+						// Fetch all the forms we want to apply custom Bootstrap validation styles to
+						var forms = document
+								.getElementsByClassName('needs-validation');
+						// Loop over them and prevent submission
+						var validation = Array.prototype.filter.call(forms,
+								function(form) {
+									form.addEventListener('submit', function(
+											event) {
+										if (form.checkValidity() === false) {
+											event.preventDefault();
+											event.stopPropagation();
+										}
+										form.classList.add('was-validated');
+									}, false);
+								});
+					}, false);
+		})();
+	</script>
+</body>
+
+</html>

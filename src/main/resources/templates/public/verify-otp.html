@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<!-- Title -->
+<title>The Palatin - Hotel &amp; Resort Template</title>
+<!-- Favicon -->
+<link rel="icon" th:href="@{/img/core-img/favicon.ico}">
+
+<!-- Core Stylesheet -->
+<link rel="stylesheet" href="" th:href="@{/css/style.css}">
+
+
+
+<link rel="stylesheet" href="" th:href="@{/css/bootstrap.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/classy-nav.css}">
+<link rel="stylesheet" href="" th:href="@{/css/owl.carousel.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/animate.css}">
+<link rel="stylesheet" href="" th:href="@{/css/magnific-popup.css}">
+<link rel="stylesheet" href="" th:href="@{/css/font-awesome.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/nice-select.css}">
+<link rel="stylesheet" href="" th:href="@{/css/travel-icon.css}">
+
+<style type="text/css">
+.section {
+	position: relative;
+	height: 100vh
+}
+
+.section .section-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+#booking {
+	font-family: 'Raleway', sans-serif
+}
+
+.booking-form {
+	position: relative;
+	max-width: 642px;
+	width: 100%;
+	margin: auto;
+	padding: 40px;
+	overflow: hidden;
+	background-image: url('https://i.imgur.com/8z1tx3u.jpg');
+	background-size: cover;
+	border-radius: 5px;
+	z-index: 20
+}
+
+.booking-form::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: -1
+}
+
+.booking-form .form-header {
+	text-align: center;
+	position: relative;
+	margin-bottom: 30px
+}
+
+.booking-form .form-header h1 {
+	font-weight: 700;
+	text-transform: capitalize;
+	font-size: 42px;
+	margin: 0px;
+	color: #fff
+}
+
+.booking-form .form-group {
+	position: relative;
+	margin-bottom: 30px
+}
+
+.booking-form .form-control {
+	background-color: rgba(255, 255, 255, 0.2);
+	height: 60px;
+	padding: 0px 25px;
+	border: none;
+	border-radius: 40px;
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 0px 2px transparent;
+	box-shadow: 0px 0px 0px 2px transparent;
+	-webkit-transition: 0.2s;
+	transition: 0.2s
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.5)
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+	color: rgba(255, 255, 255, 0.5)
+}
+
+.booking-form .form-control::placeholder {
+	color: rgba(255, 255, 255, 0.5)
+}
+
+.booking-form .form-control:focus {
+	-webkit-box-shadow: 0px 0px 0px 2px #ff8846;
+	box-shadow: 0px 0px 0px 2px #ff8846
+}
+
+.booking-form input[type="date"].form-control {
+	padding-top: 16px
+}
+
+.booking-form input[type="date"].form-control:invalid {
+	color: rgba(255, 255, 255, 0.5)
+}
+
+.booking-form input[type="date"].form-control+.form-label {
+	opacity: 1;
+	top: 10px
+}
+
+.booking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none
+}
+
+.booking-form select.form-control:invalid {
+	color: rgba(255, 255, 255, 0.5)
+}
+
+.booking-form select.form-control+.select-arrow {
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 14px
+}
+
+.booking-form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg)
+}
+
+.booking-form select.form-control option {
+	color: #000
+}
+
+.booking-form .form-label {
+	position: absolute;
+	top: -10px;
+	left: 25px;
+	opacity: 0;
+	color: #ff8846;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	height: 15px;
+	line-height: 15px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all
+}
+
+.booking-form .form-group.input-not-empty .form-control {
+	padding-top: 16px
+}
+
+.booking-form .form-group.input-not-empty .form-label {
+	opacity: 1;
+	top: 10px
+}
+
+.booking-form .submit-btn {
+	color: #fff;
+	background-color: #e35e0a;
+	font-weight: 700;
+	height: 60px;
+	padding: 10px 30px;
+	width: 100%;
+	border-radius: 40px;
+	border: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 1.3px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all
+}
+
+.booking-form .submit-btn:hover, .booking-form .submit-btn:focus {
+	opacity: 0.9
+}
+</style>
+
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div class="preloader d-flex align-items-center justify-content-center">
+		<div class="cssload-container">
+			<div class="cssload-loading">
+				<i></i><i></i><i></i><i></i>
+			</div>
+		</div>
+	</div>
+
+	<!-- ##### Header Area Start ##### -->
+	<header class="header-area">
+		<!-- Navbar Area -->
+		<div class="palatin-main-menu">
+			<div class="classy-nav-container breakpoint-off">
+				<div class="container">
+					<!-- Menu -->
+					<nav class="classy-navbar justify-content-between" id="palatinNav">
+
+						<!-- Nav brand -->
+						<a th:href="@{/public/}" class="nav-brand"><img
+							th:src="@{/img/core-img/logo.png}" alt=""></a>
+
+						<!-- Navbar Toggler -->
+						<div class="classy-navbar-toggler">
+							<span class="navbarToggler"><span></span><span></span><span></span></span>
+						</div>
+
+						<!-- Menu -->
+						<div class="classy-menu">
+
+							<!-- close btn -->
+							<div class="classycloseIcon">
+								<div class="cross-wrap">
+									<span class="top"></span><span class="bottom"></span>
+								</div>
+							</div>
+
+							<!-- Nav Start -->
+							<div class="classynav">
+								<ul>
+									<li class="active"><a th:href="@{/public/}">Home</a></li>
+									<li><a th:href="@{/public/about-us}">About Us</a></li>
+									<li><a href="#">Pages</a>
+										<ul class="dropdown">
+											<li><a th:href="@{/public/}">Home</a></li>
+											<li><a th:href="@{/public/about-us}">About Us</a></li>
+											<li><a th:href="@{/public/services}">Services</a></li>
+											<li><a th:href="@{/public/rooms}">Rooms</a></li>
+											<li><a th:href="@{/public/blog}">News</a></li>
+											<li><a th:href="@{/public/contact}">Contact</a></li>
+											<li><a th:href="@{/public/elements}">Elements</a></li>
+										</ul></li>
+									<li><a href="#">Mega Menu</a>
+										<div class="megamenu">
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Admin Login</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li style="background-color: red;"><a th:href="@{/log/loging}">Admin Login</a></li>
+												<li><a th:href="@{/Catagory/addCatagory}">Add
+														Catagory</a></li>
+
+												<li><a th:href="@{/Catagory/viewAllCatagory/0}">view
+														All Catagory</a></li>
+												<li><a th:href="@{/post/show-all-hotel/0}">Show all
+														hotel post</a></li>
+												<li><a th:href="@{/logout}">Log Out</a></li>
+
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Home</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Home</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+										</div></li>
+									<li><a th:href="@{/public/services}">Services</a></li>
+									<li><a th:href="@{/public/contact}">Contact</a></li>
+								</ul>
+
+								<!-- Button -->
+								<div class="menu-btn">
+									<a href="#" class="btn palatin-btn">Make a Reservation</a>
+								</div>
+
+							</div>
+							<!-- Nav End -->
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ##### Header Area End ##### -->
+
+	<!-- ##### Breadcumb Area Start ##### -->
+
+
+
+
+
+
+
+
+	<!-- ##### Contact Form Area Start ##### -->
+	<div class="book-now-area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-10">
+					<div id="booking" class="section">
+						<div class="section-center">
+							<div class="container">
+								<div class="row">
+									<div class="booking-form">
+										<div class="form-header">
+											<h1>Verify OTP</h1>
+										</div>
+
+										<div th:if="${param.error}" class="alert alert-danger">
+											Invalid Email and Password</div>
+										<div th:if="${param.logout}" class="alert alert-danger">
+											Logout</div>
+										<!-- Start Form -->
+
+										<form th:action="@{/forgot/verify-otp}" method="post">
+
+											<div class="form-group">
+												<input class="form-control fixt" type="text"
+													placeholder="Enter your OTP" name="otp" required> <span class="form-label">Enter
+													OTP</span>
+											</div>
+											<div class="form-btn">
+												<button class="submit-btn" type="submit">Verify OTP</button>
+											</div>
+										</form>
+
+										<!-- end Form -->
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- ##### Contact Form Area End ##### -->
+
+	<!-- ##### Footer Area Start ##### -->
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row">
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-lg-5">
+					<div class="footer-widget-area mt-50">
+						<a href="#" class="d-block mb-5"><img
+							th:src="@{/img/core-img/logo.png}" alt=""></a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Donec malesuada lorem maximus mauris sceleri sque, at rutrum
+							nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus
+							finibus.</p>
+					</div>
+				</div>
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="footer-widget-area mt-50">
+						<h6 class="widget-title mb-5">Find us on the map</h6>
+						<img th:src="@{/img/bg-img/footer-map.png}" alt="">
+					</div>
+				</div>
+
+				<!-- Footer Widget Area -->
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="footer-widget-area mt-50">
+						<h6 class="widget-title mb-5">Subscribe to our newsletter</h6>
+						<form action="#" method="post" class="subscribe-form">
+							<input type="email" id="subscribeemail"
+								placeholder="Your E-mail">
+							<button type="submit">Subscribe</button>
+						</form>
+					</div>
+				</div>
+
+				<!-- Copywrite Text -->
+				<div class="col-12">
+					<div class="copywrite-text mt-30">
+						<p>
+							<a href="#"> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+							</a>
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
+							All rights reserved | This template is made with <i
+								class="fa fa-heart-o" aria-hidden="true"></i> by <a
+								href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ##### Footer Area End ##### -->
+
+	<!-- ##### All Javascript Script ##### -->
+	<!-- jQuery-2.2.4 js -->
+	<script th:src="@{/js/jquery/jquery-2.2.4.min.js}"></script>
+	<!-- Popper js -->
+	<script th:src="@{/js/bootstrap/popper.min.js}"></script>
+	<!-- Bootstrap js -->
+	<script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+	<!-- All Plugins js -->
+	<script th:src="@{/js/plugins/plugins.js}"></script>
+	<!-- Active js -->
+	<script th:src="@{/js/active.js}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<!-- Title -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+	integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<title>The Palatin - Hotel &amp; Resort Template</title>
+<!-- Favicon -->
+<link rel="icon" th:href="@{/img/core-img/favicon.ico}">
+
+<!-- Core Stylesheet -->
+<link rel="stylesheet" href="" th:href="@{/css/style.css}">
+
+
+<link rel="stylesheet" href="" th:href="@{/css/bootstrap.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/classy-nav.css}">
+<link rel="stylesheet" href="" th:href="@{/css/owl.carousel.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/animate.css}">
+<link rel="stylesheet" href="" th:href="@{/css/magnific-popup.css}">
+<link rel="stylesheet" href="" th:href="@{/css/font-awesome.min.css}">
+<link rel="stylesheet" href="" th:href="@{/css/nice-select.css}">
+<link rel="stylesheet" href="" th:href="@{/css/travel-icon.css}">
+<link rel="stylesheet" href="" th:href="@{/css/image.css}">
+
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div class="preloader d-flex align-items-center justify-content-center">
+		<div class="cssload-container">
+			<div class="cssload-loading">
+				<i></i><i></i><i></i><i></i>
+			</div>
+		</div>
+	</div>
+
+	<!-- ##### Header Area Start ##### -->
+	<header class="header-area">
+		<!-- Navbar Area -->
+		<div class="palatin-main-menu">
+			<div class="classy-nav-container breakpoint-off">
+				<div class="container">
+					<!-- Menu -->
+					<nav class="classy-navbar justify-content-between" id="palatinNav">
+
+						<!-- Nav brand -->
+						<a th:href="@{/public/}" class="nav-brand"><img
+							th:src="@{/img/core-img/logo.png}" alt=""></a>
+
+						<!-- Navbar Toggler -->
+						<div class="classy-navbar-toggler">
+							<span class="navbarToggler"><span></span><span></span><span></span></span>
+						</div>
+
+						<!-- Menu -->
+						<div class="classy-menu">
+
+							<!-- close btn -->
+							<div class="classycloseIcon">
+								<div class="cross-wrap">
+									<span class="top"></span><span class="bottom"></span>
+								</div>
+							</div>
+
+							<!-- Nav Start -->
+							<div class="classynav">
+								<ul>
+									<li class="active"><a th:href="@{/public/}">Home</a></li>
+									<li><a th:href="@{/public/about-us}">About Us</a></li>
+									<li><a href="#">Pages</a>
+										<ul class="dropdown">
+											<li><a th:href="@{/public/}">Home</a></li>
+											<li><a th:href="@{/public/about-us}">About Us</a></li>
+											<li><a th:href="@{/public/services}">Services</a></li>
+											<li><a th:href="@{/public/rooms}">Rooms</a></li>
+											<li><a th:href="@{/public/blog}">News</a></li>
+											<li><a th:href="@{/public/contact}">Contact</a></li>
+											<li><a th:href="@{/public/elements}">Elements</a></li>
+										</ul></li>
+									<li><a href="#">Mega Menu</a>
+										<div class="megamenu">
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Admin Login</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li style="background-color: red;"><a
+													th:href="@{/log/loging}">Admin Login</a></li>
+												<li><a th:href="@{/Catagory/addCatagory}">Add
+														Catagory</a></li>
+
+												<li><a th:href="@{/Catagory/viewAllCatagory/0}">view
+														All Catagory</a></li>
+												<li><a th:href="@{/post/show-all-hotel/0}">Show all
+														hotel post</a></li>
+												<li><a th:href="@{/logout}">Log Out</a></li>
+
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Home</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+											<ul class="single-mega cn-col-4">
+												<li><a th:href="@{/public/}">Home</a></li>
+												<li><a th:href="@{/public/about-us}">About Us</a></li>
+												<li><a th:href="@{/public/services}">Services</a></li>
+												<li><a th:href="@{/public/rooms}">Rooms</a></li>
+												<li><a th:href="@{/public/blog}">News</a></li>
+												<li><a th:href="@{/public/contact}">Contact</a></li>
+												<li><a th:href="@{/public/elements}">Elements</a></li>
+											</ul>
+										</div></li>
+									<li><a th:href="@{/public/services}">Services</a></li>
+									<li><a th:href="@{/public/contact}">Contact</a></li>
+								</ul>
+
+
+
+							</div>
+							<!-- Nav End -->
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<!-- ##### Rooms Area Start ##### -->
+
+
+
+
+
+
+	<div class="grid"
+		style="width: 50%; margin-left: 2%; margin-top: -12%;">
+
+		<div class="item"
+			style="height: 32%; margin-top: 150%; background-image: url(/img/bg-img/3.jpg)">
+
+		</div>
+
+		<div class="item"
+			style="display: none; background-image: url(/img/bg-img/10.jpg)">
+
+		</div>
+
+		<div class="item" style="background-image: url(/img/bg-img/10.jpg)">
+
+		</div>
+
+		<div class="item" style="background-image: url(/img/bg-img/11.jpg)">
+
+		</div>
+
+		<div class="item"
+			style="background-image: url(/img/bg-img/istockphoto-843823656-612x612.jpg)">
+
+		</div>
+
+	</div>
+	<div>
+
+		<h4 style="margin-top: -25%; margin-left: 57%;">
+			<i class="fa-solid fa-hotel"></i><b>Hotel Name : </b> <span
+				style="color: olive;" th:text="${post.postname}">Yes</span>
+		</h4>
+		<br> <br>
+		<h4 style="margin-left: 57%;">
+			<i class="fa-solid fa-location-dot"></i>Location : <span
+				style="color: olive;" th:text="${post.hotelLocation}">Yes</span>
+		</h4>
+		<br> <br>
+		<h4 style="margin-left: 57%;">
+			<i class="fa-sharp fa-solid fa-dollar-sign"></i>price : <span
+				style="color: olive;" th:text="${post.romePrice}"></span>
+		</h4>
+		<br> <br>
+		<h4 style="margin-left: 57%;">
+			<i class="fa-solid fa-envelope"></i>Email : <span
+				style="color: olive;" th:text="${post.businessEmail}"></span>
+		</h4>
+		<br> <br>
+		<p style="margin-left: 57%;">
+			<i class="fa-solid fa-files"></i>Description : <span
+				style="color: olive;" th:text="${post.postDescription}"></span>
+		</p>
+
+		<div class="animated-button1" style="margin-left: 60%;">
+			<a th:href="@{'/booking/book-hotel/'+${post.postId}+'/0'}"> <span></span>
+				<span></span> <span></span> <span></span> <input
+				class="animated-button1" type="submit" value="Book now">
+			</a>
+		</div>
+
+
+	</div>
+	<!-- Contact Info -->
+	<div class="col-12 mb-100" style="margin-top: 5%;">
+		<div class="row">
+			<!-- Single Icon -->
+			<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+				<div class="single-icon mb-30">
+					<i class="fa-solid fa-phone"></i><span>Contact Number </span> <br>
+					<span style="color: olive;" th:text="${post.onePhoneNumber}"></span>&<span
+						style="color: olive;" th:text="${post.twoPhoneNumber}"></span>
+				</div>
+			</div>
+
+			<!-- Single Icon -->
+			<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+				<div class="single-icon mb-30">
+					<i class="fa-solid fa-wifi"></i><span>Wi-Fi</span> <br> <span
+						style="color: olive;" th:text="${post.wiFi}">Yes</span>
+				</div>
+			</div>
+
+			<!-- Single Icon -->
+			<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+				<div class="single-icon mb-30">
+					<i class="fa-solid fa-bed"></i><span>Bed-Size</span> <br> <span
+						style="color: olive;" th:text="${post.doublebed}">Yes</span>
+				</div>
+			</div>
+
+			<!-- Single Icon -->
+			<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+				<div class="single-icon mb-30">
+					<i class="fa-solid fa-utensils"></i><span>Restaurent</span> <br>
+					<span style="color: olive;" th:text="${post.restaurant}">Yes</span>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+				<div class="single-icon mb-30">
+					<i class="fa-solid fa-football"></i><span>Park</span> <br> <span
+						style="color: olive;" th:text="${post.park}">Yes</span>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+				<div class="single-icon mb-30">
+					<i class="fa-solid fa-person-swimming"></i><span>Pool</span> <br>
+					<span style="color: olive;" th:text="${post.Pool}">Yes</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ##### Rooms Area End ##### -->
+	<!-- -------------------------------------------------------- -->
+<body>
+	<div class="container">
+		<div class="col-md-12" id="fbcomment">
+			<div class="header_comment">
+				<div class="row">
+					<div class="col-md-6 text-left">
+						<span class="count_comment">264 Comments</span>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="body_comment">
+				<div class="row">
+					<div class="avatar_comment col-md-1">
+						<img th:src="@{/img/download.jpg}" alt="avatar" />
+					</div>
+
+
+
+
+					<form action="#" novalidate
+						enctype="multipart/form-data" method="POST"
+						th:action="@{/comment/savecomment}">
+
+
+						<div class="form-group">
+
+							<textarea placeholder="Enter something " id="mytextarea"
+								name="hotelcomment" rows="3" class="form-control">
+							                    </textarea>
+						</div>
+						<div class="form-group">
+
+							<input class="form-control" type="file" name="postimage">
+						</div>
+						<div class="form-btn">
+							<button class="submit-btn" type="submit">Submit</button>
+						</div>
+					</form>
+					
+					
+				</div>
+				<div class="row">
+					<ul id="list_comment" class="col-md-12">
+						<!-- Start List Comment 1 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img th:src="@{/img/download.jpg}" alt="avatar" />
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>Nathan Smith</h4>
+								<p>Have been buying from Put Your Feet Up for almost 2 years
+									now and have not been let down once. My absolute go to for
+									gifts and they are always a hit!</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Like</a> <span aria-hidden="true">
+										· </span> <a class="replay" href="#">Reply</a> <span
+										aria-hidden="true"> · </span> <i class="fa fa-thumbs-o-up"></i>
+									<span class="count">3</span> <span aria-hidden="true"> ·
+									</span> <span>26m</span>
+								</div>
+								<ul class="child_replay">
+									<li class="box_reply row">
+										<div class="avatar_comment col-md-1">
+											<img th:src="@{/img/download.jpg}" alt="avatar" />
+										</div>
+										<div class="result_comment col-md-11">
+											<h4>Amanda Hogan</h4>
+											<p>I received a lovely gift set for my birthday! Nicest
+												candles I have ever had and the fact they are Irish makes it
+												even better :)</p>
+											<div class="tools_comment">
+												<a class="like" href="#">Like</a> <span aria-hidden="true">
+													· </span> <a class="replay" href="#">Reply</a> <span
+													aria-hidden="true"> · </span> <i class="fa fa-thumbs-o-up"></i>
+												<span class="count">7</span> <span aria-hidden="true">
+													· </span> <span>5m</span>
+											</div>
+											<ul class="child_replay"></ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<!-- Start List Comment 1 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img th:src="@{/img/download.jpg}" alt="avatar" />
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>Anne Carnegie</h4>
+								<p>Just placed my order can't wait!</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Like</a> <span aria-hidden="true">
+										· </span> <a class="replay" href="#">Reply</a> <span
+										aria-hidden="true"> · </span> <i class="fa fa-thumbs-o-up"></i>
+									<span class="count">11</span> <span aria-hidden="true">
+										· </span> <span>9h</span>
+								</div>
+								<ul class="child_replay">
+									<li class="box_reply row">
+										<div class="avatar_comment col-md-1">
+											<img th:src="@{/img/download.jpg}" alt="avatar" />
+										</div>
+										<div class="result_comment col-md-11">
+											<h4>John Barry</h4>
+											<p>We ended up buying 3 for the extra discount - Great
+												deal!!</p>
+											<div class="tools_comment">
+												<a class="like" href="#">Like</a> <span aria-hidden="true">
+													· </span> <a class="replay" href="#">Reply</a> <span
+													aria-hidden="true"> · </span> <i class="fa fa-thumbs-o-up"></i>
+												<span class="count">1</span> <span aria-hidden="true">
+													· </span> <span>44m</span>
+											</div>
+											<ul class="child_replay"></ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<!-- Start List Comment 2 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img th:src="@{/img/download.jpg}" alt="avatar" />
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>Cormac Heffernan</h4>
+								<p>I actually know the owners of it, they started the
+									business during the pandemic. Really nice people and they still
+									make them all themselves from their warehouse in Kildare</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Like</a> <span aria-hidden="true">
+										· </span> <a class="replay" href="#">Reply</a> <span
+										aria-hidden="true"> · </span> <i class="fa fa-thumbs-o-up"></i>
+									<span class="count">4</span> <span aria-hidden="true"> ·
+									</span> <span>16h</span>
+								</div>
+								<ul class="child_replay"></ul>
+							</div>
+						</li>
+					</ul>
+					<!-- <button class="show_more" type="button">Load 10 more comments</button>
+          -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+
+<!-- ------------------------------------------------------------------------------------------ -->
+
+<section class="rooms-area section-padding-0-100"
+	style="margin-top: 10%;">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-6">
+				<div class="section-heading text-center">
+					<div class="line-"></div>
+					<h2>Choose a room</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla
+						dictum. Ut ac ligula sapien.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<!-- Single Rooms Area -->
+
+			<div class="col-12 col-md-6 col-lg-4" th:each="c:${allPost}"
+				style="margin-top: 5%;">
+				<div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
+					Thumbnail
+					<div class="bg-thumbnail bg-img">
+						<a th:href="@{'/booking/view-single-post/'+${c.postId}+'/0'}">
+							<img alt="" th:src="@{/img/bg-img/1.jpg}">
+						</a>
+					</div>
+					Price
+					<p class="price-from" th:text="${c.romePrice}">From $150/night</p>
+					Rooms Text
+					<div class="rooms-text">
+						<div class="line"></div>
+						<h4 th:text="${c.postname}">Deluxe Room</h4>
+						<p th:text="${c.postDescription}">Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit. Donec malesuada lorem maximus mauris
+							sceleri sque.</p>
+
+					</div>
+
+				</div>
+
+				<div style="margin-top: -20%; background-color: #DCDCDC;">
+					<h6>
+						<span><i class="fa-sharp fa-solid fa-envelope"></i></span>
+						Business Email :-<span th:text="${c.businessEmail}"
+							style="color: #e9967a;"></span>
+					</h6>
+					<h6>
+						<span><i class="fa-solid fa-location-dot"></i></span> Hotel
+						Location :-<span th:text="${c.hotelLocation}"
+							style="color: #e9967a;"></span>
+					</h6>
+					<h6>
+						<span><i class="fa-solid fa-phone"></i></span> One Phone Number :-<span
+							th:text="${c.onePhoneNumber}" style="color: #e9967a;"></span>
+					</h6>
+					<h6>
+						<span><i class="fa-solid fa-phone"></i></span> Two Phone Number :-<span
+							th:text="${c.twoPhoneNumber}" style="color: #e9967a;"></span>
+					</h6>
+					<h6>
+						<span><i class="fa-solid fa-wifi"></i></span> Wi-Fi :-<span
+							th:text="${c.wiFi}" style="color: #e9967a;"></span>
+					</h6>
+					<h6>
+						<span><i class="fa-solid fa-house-user"></i></span> Sq.ft :-<span
+							th:text="${c.sqft}" style="color: #e9967a;"></span>
+					</h6>
+					<h6>
+						<span><i class="fa-solid fa-bed"></i></span> Bed Size :-<span
+							th:text="${c.doublebed}" style="color: #e9967a;"></span>
+					</h6>
+					<h6>
+						<span><i class="fa-solid fa-utensils"></i></span> Restaurant :-<span
+							th:text="${c.restaurant}" style="color: #e9967a;"></span>
+					</h6>
+					<h6>
+						<span><i class="fa-solid fa-football"></i></span> park :-<span
+							th:text="${c.park}" style="color: #e9967a;"></span>
+					</h6>
+					<h6>
+						<span><i class="fa-solid fa-person-swimming"></i></span> Pool :-<span
+							th:text="${c.Pool}" style="color: #e9967a;"></span>
+					</h6>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+<!--  <div class="row resources ">
+		<div class="container" id="resource-slider">
+			<button class='arrow prev'></button>
+			<button class='arrow next'></button>
+			<div class="resource-slider-frame">
+
+				<div class="resource-slider-item">
+					<div class="resource-slider-inset">
+						<div class="resource">
+							<a
+								href="/whitepapers/securitycenter-continuous-view-support-for-the-nist-cybersecurity-resource-slider-framework-dashboards"><img
+								src="https://tenable.com//sites/all/themes/tenablefourteen/img/resource-img/resource-library-teasers-blue.png"></a>
+							<footer class="hmt small">Whitepaper</footer>
+							<header>
+								<h4 class="hmt">
+									<a
+										href="/whitepapers/securitycenter-continuous-view-support-for-the-nist-cybersecurity-resource-slider-framework-dashboards">First
+										thingy</a>
+								</h4>
+							</header>
+						</div>
+					</div>
+				</div>
+
+				<div class="resource-slider-item">
+					<div class="resource-slider-inset">
+						<div class="resource">
+							<a
+								href="/whitepapers/nist-resource-slider-framework-for-improving-critical-infrastructure-cybersecurity-technical-control"><img
+								src="https://tenable.com//sites/all/themes/tenablefourteen/img/resource-img/resource-library-teasers-blue.png"></a>
+							<footer class="hmt small">Whitepaper</footer>
+							<header>
+								<h4 class="hmt">
+									<a
+										href="/whitepapers/nist-resource-slider-framework-for-improving-critical-infrastructure-cybersecurity-technical-control">A
+										thingy</a>
+								</h4>
+							</header>
+						</div>
+					</div>
+				</div>
+
+				<div class="resource-slider-item">
+					<div class="resource-slider-inset">
+						<div class="resource">
+							<a href="/infographics/csf-by-the-numbers"><img
+								src="https://tenable.com//sites/all/themes/tenablefourteen/img/resource-img/resource-library-teasers-teal.png"></a>
+							<footer class="hmt small">Infographic</footer>
+							<header>
+								<h4 class="hmt">
+									<a href="/infographics/csf-by-the-numbers">Another thingy</a>
+								</h4>
+							</header>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="resource-slider-item">
+					<div class="resource-slider-inset">
+						<div class="resource">
+							<a
+								href="/webinars/successfully-implementing-the-nist-cybersecurity-resource-slider-framework"><img
+								src="https://tenable.com/sites/all/themes/tenablefourteen/img/resource-img/resource-library-teasers-green.png"></a>
+							<footer class="hmt small">Webinar</footer>
+							<header>
+								<h4>
+									<a
+										href="/webinars/successfully-implementing-the-nist-cybersecurity-resource-slider-framework">Last
+										thingy</a>
+								</h4>
+							</header>
+						</div>
+					</div>
+				</div>
+
+				<div class="resource-slider-item">
+					<div class="resource-slider-inset">
+						<div class="resource">
+							<a
+								href="/webinars/automate-simplify-and-communicate-nist-csf-conformance"><img
+								src="https://tenable.com//sites/all/themes/tenablefourteen/img/resource-img/resource-library-teasers-green.png"></a>
+							<footer class="hmt small">Webinar</footer>
+							<header>
+								<h4 class="hmt">
+									<a
+										href="/webinars/automate-simplify-and-communicate-nist-csf-conformance">Just
+										kidding another thingy</a>
+								</h4>
+							</header>
+						</div>
+					</div>
+				</div>
+
+				<div class="resource-slider-item">
+					<div class="resource-slider-inset">
+						<div class="resource">
+							<a href="/data-sheets/securitycenter-continuous-view"><img
+								src="https://tenable.com/sites/all/themes/tenablefourteen/img/resource-img/resource-library-teasers-slate.png"></a>
+							<footer class="hmt small">Data Sheet</footer>
+							<header>
+								<h4>
+									<a href="/data-sheets/securitycenter-continuous-view">Real
+										last thingy</a>
+								</h4>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+
+
+
+
+
+
+
+<!-- ##### Footer Area Start ##### -->
+<footer class="footer-area">
+	<div class="container">
+		<div class="row">
+
+			<!-- Footer Widget Area -->
+			<div class="col-12 col-lg-5">
+				<div class="footer-widget-area mt-50">
+					<a href="#" class="d-block mb-5"><img
+						th:src="@{/img/core-img/logo.png}" alt=""></a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla
+						dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+				</div>
+			</div>
+
+			<!-- Footer Widget Area -->
+			<div class="col-12 col-md-6 col-lg-4">
+				<div class="footer-widget-area mt-50">
+					<h6 class="widget-title mb-5">Find us on the map</h6>
+					<img th:src="@{/img/bg-img/footer-map.png}" alt="">
+				</div>
+			</div>
+
+			<!-- Footer Widget Area -->
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="footer-widget-area mt-50">
+					<h6 class="widget-title mb-5">Subscribe to our newsletter</h6>
+					<form action="#" method="post" class="subscribe-form">
+						<input type="email" name="subscribe-email" id="subscribeemail"
+							placeholder="Your E-mail">
+						<button type="submit">Subscribe</button>
+					</form>
+				</div>
+			</div>
+
+			<!-- Copywrite Text -->
+			<div class="col-12">
+				<div class="copywrite-text mt-30">
+					<p>
+						<a href="#"> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;
+						</a>
+						<script>
+							document.write(new Date().getFullYear());
+						</script>
+						All rights reserved | This template is made with <i
+							class="fa fa-heart-o" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- ##### Footer Area End ##### -->
+
+<!-- ##### All Javascript Script ##### -->
+<!-- jQuery-2.2.4 js -->
+<script th:src="@{/js/jquery/jquery-2.2.4.min.js}"></script>
+<!-- Popper js -->
+<script th:src="@{/js/bootstrap/popper.min.js}"></script>
+<!-- Bootstrap js -->
+<script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+<!-- All Plugins js -->
+<script th:src="@{/js/plugins/plugins.js}"></script>
+<!-- Active js -->
+<script th:src="@{/js/active.js}"></script>
+<script th:src="@{/js/script.js}"></script>
+</body>
+
+
+</html>
